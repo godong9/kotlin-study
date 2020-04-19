@@ -42,7 +42,7 @@ fun main() {
         println(element)
     }
 
-    println(mixedArray is Array<Any>)
+    println(mixedArray is Array<*>)
 
     val myIntArray = intArrayOf(3, 5, 22, 53, 24)
     DummyClass().printNumbers(myIntArray)
