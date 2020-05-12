@@ -1,6 +1,19 @@
 package io.gd.study
 
 fun main() {
+    val setInts = setOf(10, 15, 19, 5, 3, -22)
+    println(setInts.plus(20))
+    println(setInts.plus(10))
+    println(setInts.minus(19))
+    println(setInts.minus(100))
+    println(setInts.average())
+    println(setInts.drop(3))
+    println(setInts)
+
+    val mutableInts = mutableSetOf(1, 2, 3, 4, 5)
+    mutableInts.plus(10)
+    println(mutableInts)
+
     val immutableMap = mapOf<Int, CarMap>(1 to CarMap("green", "Toyota", 2015),
             2 to CarMap("red", "Ford", 2016),
             3 to CarMap("silver", "Honda", 2013))
