@@ -10,6 +10,7 @@ fun main() {
             3 to CarMap("silver", "Honda", 2013),
             17 to CarMap("red", "BMW", 2015),
             8 to CarMap("green", "Ford", 2010))
+    println(immutableMap.toSortedMap())
 
 //    println(immutableMap.filter { it.value.year == 2016 })
 
@@ -19,6 +20,7 @@ fun main() {
     val cars = immutableMap.values
     println(cars.find { it.year > 2014 })
     println(cars.groupBy { it.color })
+    println(cars.sortedBy { it.year })
 
     println(immutableMap.filter { it.value.model == "Ford" }
             .map { it.value.color })
